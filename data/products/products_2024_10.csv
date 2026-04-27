@@ -1,0 +1,201 @@
+product_id,product_name,category,sub_category,price,cost,stock_quantity,supplier_id,created_at
+1,Face Wash,Beauty,Skincare,1181.1,840.28,221,2,2024-11-05
+2,Lamp,Home,Decor,967.49,549.31,77,3,2023-06-11
+3,Kids T-Shirt,Clothing,Kids,1589.25,925.91,71,7,2025-10-03
+4,Hair Oil,Beauty,Haircare,999.18,643.79,158,1,2025-04-22
+5,OnePlus 11,Electronics,Mobile,1773.7,1036.28,197,19,2025-06-18
+6,Mixer,Home,Kitchen,1797.53,1151.02,147,1,2025-04-06
+7,Tent,Sports,Outdoor,251.27,146.04,461,14,2024-10-10
+8,Wireless Mouse,Electronics,Accessories,386.98,193.84,396,12,2026-08-21
+9,Foundation,Beauty,Makeup,1290.05,853.81,33,6,2023-01-10
+10,AirPods Pro,Electronics,Audio,111.98,88.3,427,17,2026-12-12
+11,Sunscreen,Beauty,Skincare,678.23,514.92,143,17,2025-01-21
+12,Moisturizer,Beauty,Skincare,655.78,433.55,101,9,2024-08-20
+13,T-Shirt,Clothing,Men,559.28,417.69,50,12,2023-11-25
+14,Dell XPS 13,Electronics,Laptop,1563.7,1163.9,11,4,2025-10-03
+15,Hair Oil,Beauty,Haircare,518.31,311.28,154,20,2024-03-14
+16,Kids T-Shirt,Clothing,Kids,220.44,120.52,133,17,2025-02-06
+17,Office Chair,Home,Furniture,1370.73,697.58,217,19,2026-12-27
+18,Dell XPS 13,Electronics,Laptop,1640.65,1251.73,135,6,2024-01-06
+19,Sofa,Home,Furniture,373.79,291.47,166,1,2025-01-31
+20,Chess Set,Sports,Indoor,1547.26,1160.63,88,6,2026-02-27
+21,Foundation,Beauty,Makeup,1380.59,780.73,65,10,2025-09-30
+22,Moisturizer,Beauty,Skincare,403.69,274.06,388,16,2023-10-15
+23,Lamp,Home,Decor,269.03,153.16,354,20,2025-05-01
+24,T-Shirt,Clothing,Men,330.77,183.14,333,6,2026-02-01
+25,Shampoo,Beauty,Haircare,1621.35,952.97,175,9,2026-08-16
+26,Sunscreen,Beauty,Skincare,1512.55,838.95,85,2,2026-10-03
+27,Lipstick,Beauty,Makeup,539.0,416.95,424,3,2026-04-24
+28,Dell XPS 13,Electronics,Laptop,1019.04,641.01,21,6,2025-07-23
+29,Knife Set,Home,Kitchen,378.1,228.84,333,14,2024-09-25
+30,Tent,Sports,Outdoor,961.96,738.02,125,15,2025-04-26
+31,Knife Set,Home,Kitchen,118.45,74.72,289,2,2025-06-06
+32,Mi Smart TV,Electronics,TV,881.67,468.14,175,18,2024-03-27
+33,Foundation,Beauty,Makeup,841.97,516.55,363,10,2025-09-02
+34,Wireless Mouse,Electronics,Accessories,629.96,456.88,393,16,2025-10-01
+35,Dumbbells,Sports,Fitness,795.6,576.7,331,14,2024-02-08
+36,Kids Shorts,Clothing,Kids,1895.54,1391.22,431,8,2023-01-12
+37,Tent,Sports,Outdoor,685.34,402.21,415,12,2026-06-14
+38,Tent,Sports,Outdoor,1419.16,904.11,453,3,2023-07-27
+39,Jacket,Clothing,Men,1546.35,1177.01,445,17,2025-07-15
+40,Dell XPS 13,Electronics,Laptop,677.83,356.81,203,10,2026-09-30
+41,T-Shirt,Clothing,Men,108.3,73.77,407,10,2025-10-15
+42,Jacket,Clothing,Men,1898.08,1373.43,473,9,2023-02-21
+43,Sofa,Home,Furniture,138.06,105.29,425,13,2025-11-05
+44,Clock,Home,Decor,1807.91,1034.56,211,15,2024-04-19
+45,Moisturizer,Beauty,Skincare,1417.02,916.53,320,2,2025-11-10
+46,Lipstick,Beauty,Makeup,435.8,242.63,470,5,2023-09-17
+47,Lipstick,Beauty,Makeup,874.1,437.8,145,15,2024-12-28
+48,Jacket,Clothing,Men,1314.11,680.39,117,15,2026-07-03
+49,Moisturizer,Beauty,Skincare,682.5,437.21,147,9,2024-06-04
+50,iPhone 15,Electronics,Mobile,282.24,174.98,93,2,2023-10-22
+51,Cookware Set,Home,Kitchen,1531.75,1027.95,60,2,2024-04-05
+52,Shirt,Clothing,Men,717.97,548.64,359,10,2023-10-10
+53,Tent,Sports,Outdoor,1697.66,1327.66,147,9,2024-07-22
+54,Face Wash,Beauty,Skincare,1480.76,773.24,485,17,2023-12-10
+55,Wall Art,Home,Decor,1901.26,1303.64,349,6,2023-11-26
+56,Face Wash,Beauty,Skincare,1512.63,1208.68,163,15,2026-12-13
+57,Kids Shorts,Clothing,Kids,1291.54,850.17,468,16,2026-12-05
+58,Tent,Sports,Outdoor,1761.16,1044.58,435,8,2026-05-09
+59,Samsung 55 TV,Electronics,TV,1122.23,809.84,238,16,2023-07-28
+60,Shampoo,Beauty,Haircare,1872.08,1084.28,490,11,2024-08-23
+61,MacBook Air M2,Electronics,Laptop,919.8,588.28,448,17,2025-12-11
+62,Sony Headphones,Electronics,Audio,1408.62,900.57,339,2,2025-06-08
+63,Shirt,Clothing,Men,1777.68,1289.98,263,2,2023-10-24
+64,Yoga Mat,Sports,Fitness,1037.36,763.69,39,17,2026-12-20
+65,Samsung Galaxy S23,Electronics,Mobile,1883.78,1292.74,481,12,2023-01-16
+66,MacBook Air M2,Electronics,Laptop,355.56,247.95,212,20,2025-06-07
+67,Clock,Home,Decor,1607.69,1010.79,153,5,2023-11-28
+68,Office Chair,Home,Furniture,586.91,362.47,63,5,2026-10-22
+69,Jeans,Clothing,Men,1961.6,1034.23,174,9,2026-04-08
+70,Mixer,Home,Kitchen,959.65,596.34,27,7,2026-03-28
+71,Dumbbells,Sports,Fitness,153.61,97.93,197,14,2025-09-29
+72,Moisturizer,Beauty,Skincare,1822.65,1002.34,466,14,2025-10-22
+73,iPhone 15,Electronics,Mobile,1556.21,1197.63,132,3,2026-08-18
+74,Chess Set,Sports,Indoor,364.61,191.54,136,20,2024-02-09
+75,Dumbbells,Sports,Fitness,1202.42,740.66,196,14,2023-06-17
+76,Treadmill,Sports,Fitness,119.07,70.15,127,9,2025-08-25
+77,Mixer,Home,Kitchen,901.02,627.03,389,15,2023-09-29
+78,Shirt,Clothing,Men,1952.55,1354.84,356,11,2024-07-21
+79,Sofa,Home,Furniture,874.91,489.08,391,1,2023-06-12
+80,Jeans,Clothing,Men,1735.51,907.73,332,18,2023-05-03
+81,T-Shirt,Clothing,Men,691.89,522.33,125,5,2025-11-11
+82,Treadmill,Sports,Fitness,1031.67,539.05,128,12,2024-12-07
+83,Hair Oil,Beauty,Haircare,895.24,453.87,157,7,2025-01-06
+84,Face Wash,Beauty,Skincare,1794.17,1314.14,375,11,2026-08-18
+85,Bed,Home,Furniture,1264.15,927.88,112,13,2025-05-04
+86,Sleeping Bag,Sports,Outdoor,1389.65,1022.31,482,15,2024-05-28
+87,Office Chair,Home,Furniture,988.7,741.98,381,18,2023-11-23
+88,Yoga Mat,Sports,Fitness,1287.51,709.95,235,2,2026-07-06
+89,Table,Home,Furniture,382.43,238.82,486,6,2024-08-13
+90,Dress,Clothing,Women,1729.6,979.22,247,17,2026-10-25
+91,Kids Jacket,Clothing,Kids,281.22,205.97,71,19,2024-08-19
+92,Mi Smart TV,Electronics,TV,1576.22,1106.86,463,6,2026-12-14
+93,Kids T-Shirt,Clothing,Kids,252.09,199.55,153,9,2026-12-19
+94,Sony Bravia,Electronics,TV,373.64,188.99,71,13,2023-05-21
+95,Pixel 8,Electronics,Mobile,121.18,81.45,332,6,2026-04-18
+96,Chess Set,Sports,Indoor,1840.68,1339.08,21,4,2025-10-08
+97,Samsung 55 TV,Electronics,TV,928.93,543.6,360,5,2025-04-27
+98,Backpack,Sports,Outdoor,655.22,495.68,15,4,2025-10-21
+99,Kids Shorts,Clothing,Kids,1236.5,910.62,53,6,2026-06-07
+100,Carrom Board,Sports,Indoor,852.46,476.71,411,6,2024-05-11
+101,Lipstick,Beauty,Makeup,947.64,476.94,454,14,2023-04-15
+102,Foundation,Beauty,Makeup,1995.99,1464.89,266,2,2026-04-10
+103,Kurti,Clothing,Women,1320.99,677.11,368,13,2025-07-23
+104,Samsung 55 TV,Electronics,TV,1632.6,1218.32,193,14,2024-07-12
+105,Kids Jacket,Clothing,Kids,957.51,730.35,444,8,2025-11-02
+106,Face Wash,Beauty,Skincare,1404.64,1065.3,242,5,2026-10-11
+107,JBL Speaker,Electronics,Audio,422.56,272.81,334,2,2023-06-06
+108,Kids T-Shirt,Clothing,Kids,1482.09,918.16,332,20,2026-12-11
+109,T-Shirt,Clothing,Men,322.81,209.98,263,11,2026-09-21
+110,Lipstick,Beauty,Makeup,766.34,484.31,136,17,2026-10-14
+111,Office Chair,Home,Furniture,958.08,708.15,168,7,2025-10-26
+112,Mixer,Home,Kitchen,1776.58,895.77,224,19,2024-06-03
+113,Jeans,Clothing,Women,1325.06,914.18,300,14,2026-01-20
+114,MacBook Air M2,Electronics,Laptop,1858.64,1019.25,136,19,2026-04-22
+115,Kids Shorts,Clothing,Kids,1331.09,760.73,291,3,2026-09-02
+116,MacBook Air M2,Electronics,Laptop,681.13,395.7,413,9,2025-06-29
+117,Clock,Home,Decor,408.95,266.35,326,11,2023-07-22
+118,Foundation,Beauty,Makeup,1163.85,700.67,86,20,2026-10-10
+119,JBL Speaker,Electronics,Audio,161.05,97.65,44,3,2025-03-19
+120,iPhone 15,Electronics,Mobile,823.11,498.02,202,8,2026-02-17
+121,Tent,Sports,Outdoor,1656.74,1164.59,36,8,2025-08-20
+122,Tent,Sports,Outdoor,171.8,94.68,153,20,2026-05-03
+123,Backpack,Sports,Outdoor,990.06,764.26,210,1,2025-10-27
+124,Dumbbells,Sports,Fitness,1656.01,1044.65,321,20,2024-08-22
+125,Chess Set,Sports,Indoor,147.92,112.52,189,3,2023-08-29
+126,Mixer,Home,Kitchen,1139.54,850.74,143,8,2024-04-18
+127,Carrom Board,Sports,Indoor,473.27,301.32,32,6,2023-10-05
+128,Chess Set,Sports,Indoor,854.72,481.67,469,12,2023-05-27
+129,Hair Oil,Beauty,Haircare,660.04,414.15,496,7,2026-03-21
+130,Moisturizer,Beauty,Skincare,1006.11,698.05,352,20,2023-05-15
+131,Office Chair,Home,Furniture,1390.99,773.79,292,20,2026-10-24
+132,Lamp,Home,Decor,430.83,329.91,231,6,2026-06-14
+133,Backpack,Sports,Outdoor,673.07,421.37,65,19,2024-08-31
+134,Shirt,Clothing,Men,104.76,64.77,64,3,2026-04-29
+135,Jeans,Clothing,Men,553.36,364.81,68,13,2024-08-08
+136,Clock,Home,Decor,1769.19,1402.78,251,11,2025-01-24
+137,Lamp,Home,Decor,1515.22,1208.71,169,16,2024-05-22
+138,Sofa,Home,Furniture,1760.69,1189.23,236,17,2026-07-05
+139,Tent,Sports,Outdoor,847.87,519.95,93,4,2026-09-21
+140,Cookware Set,Home,Kitchen,1866.72,1058.63,270,16,2026-11-23
+141,Jeans,Clothing,Men,1172.82,709.13,371,15,2023-09-20
+142,Office Chair,Home,Furniture,862.83,613.51,402,20,2026-12-19
+143,MacBook Air M2,Electronics,Laptop,134.73,95.19,290,20,2024-08-13
+144,Treadmill,Sports,Fitness,1357.51,704.92,500,5,2024-10-13
+145,Power Bank,Electronics,Accessories,183.47,137.38,236,12,2026-07-22
+146,Pixel 8,Electronics,Mobile,1588.71,1114.33,438,7,2025-12-28
+147,Lamp,Home,Decor,1698.89,1305.03,129,11,2023-09-03
+148,Chess Set,Sports,Indoor,1441.5,1107.1,400,3,2023-07-11
+149,Kurti,Clothing,Women,1776.98,1170.68,242,6,2024-12-09
+150,Jacket,Clothing,Men,1434.92,1043.43,26,15,2025-07-06
+151,USB Cable,Electronics,Accessories,544.18,350.14,129,13,2023-05-20
+152,Lipstick,Beauty,Makeup,1167.97,715.34,405,5,2026-12-22
+153,Cookware Set,Home,Kitchen,248.79,170.1,316,14,2025-08-11
+154,Wall Art,Home,Decor,1192.96,933.19,307,14,2025-06-19
+155,Foundation,Beauty,Makeup,577.82,313.06,432,12,2023-08-09
+156,Foundation,Beauty,Makeup,556.13,336.55,23,3,2026-02-16
+157,Office Chair,Home,Furniture,1006.21,649.63,47,5,2023-01-19
+158,Jeans,Clothing,Men,1724.54,937.61,240,8,2024-11-19
+159,HP Pavilion,Electronics,Laptop,745.27,385.5,18,14,2026-06-07
+160,Lenovo ThinkPad,Electronics,Laptop,1185.86,746.48,248,17,2026-04-30
+161,Power Bank,Electronics,Accessories,1607.89,975.0,483,15,2023-05-14
+162,Kids T-Shirt,Clothing,Kids,1010.87,733.38,106,14,2026-10-07
+163,Sofa,Home,Furniture,1987.32,1377.39,75,6,2025-10-31
+164,Jacket,Clothing,Men,298.17,175.53,266,8,2026-10-15
+165,Jacket,Clothing,Men,162.04,94.56,496,18,2026-05-23
+166,Hair Oil,Beauty,Haircare,1613.41,1094.26,406,14,2023-02-11
+167,Treadmill,Sports,Fitness,703.41,484.37,276,4,2024-10-20
+168,Jeans,Clothing,Women,159.57,123.54,53,15,2024-09-26
+169,Face Wash,Beauty,Skincare,335.67,219.2,28,14,2026-12-04
+170,Lipstick,Beauty,Makeup,1751.75,1146.46,148,1,2024-04-01
+171,Yoga Mat,Sports,Fitness,1350.64,788.33,12,8,2026-10-02
+172,Foundation,Beauty,Makeup,1109.1,825.93,282,12,2025-07-09
+173,Table,Home,Furniture,392.68,292.55,444,5,2023-11-28
+174,Sony Headphones,Electronics,Audio,1363.88,823.61,40,8,2025-01-03
+175,Kids Jacket,Clothing,Kids,890.27,560.07,492,16,2023-08-29
+176,Hair Oil,Beauty,Haircare,1833.29,1172.93,288,19,2023-08-04
+177,Moisturizer,Beauty,Skincare,1835.62,1254.3,477,3,2025-08-14
+178,Knife Set,Home,Kitchen,1289.99,930.44,468,7,2026-02-13
+179,Jeans,Clothing,Men,1895.12,1103.2,476,8,2024-11-11
+180,Lipstick,Beauty,Makeup,346.52,261.07,174,15,2024-06-19
+181,Power Bank,Electronics,Accessories,620.11,462.23,149,14,2026-07-06
+182,Backpack,Sports,Outdoor,1143.93,621.29,299,16,2023-08-12
+183,Mixer,Home,Kitchen,791.08,399.22,369,4,2025-10-12
+184,Carrom Board,Sports,Indoor,695.29,471.63,78,5,2025-05-31
+185,Backpack,Sports,Outdoor,1313.3,969.38,449,5,2024-08-26
+186,Knife Set,Home,Kitchen,1213.91,870.41,465,9,2024-02-24
+187,Kurti,Clothing,Women,210.75,106.69,90,13,2025-07-19
+188,Lamp,Home,Decor,1408.48,1111.69,489,2,2025-03-05
+189,AirPods Pro,Electronics,Audio,1509.98,891.58,129,12,2025-09-25
+190,MacBook Air M2,Electronics,Laptop,1085.33,786.1,352,9,2024-09-25
+191,Sofa,Home,Furniture,971.24,544.98,363,13,2023-03-06
+192,Kids Jacket,Clothing,Kids,1848.78,1027.38,82,2,2026-03-12
+193,Mixer,Home,Kitchen,531.84,420.61,304,2,2023-09-13
+194,Tent,Sports,Outdoor,917.8,540.17,351,15,2023-10-03
+195,Mi Smart TV,Electronics,TV,1691.33,1293.62,339,9,2026-01-01
+196,Bed,Home,Furniture,1025.7,623.34,276,11,2025-12-16
+197,Mi Smart TV,Electronics,TV,529.37,395.98,319,13,2023-08-20
+198,Backpack,Sports,Outdoor,915.75,490.17,361,12,2024-05-10
+199,Dress,Clothing,Women,1939.39,1278.02,98,15,2026-09-17
+200,Table,Home,Furniture,230.32,141.56,471,4,2023-06-05

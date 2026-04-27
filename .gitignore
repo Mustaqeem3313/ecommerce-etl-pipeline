@@ -1,0 +1,26 @@
+# Environment — NEVER commit real credentials
+.env
+.env.example
+
+# Airflow runtime artifacts
+logs/
+__pycache__/
+*.pyc
+*.pyo
+.airflow/
+airflow.db
+
+# Python
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp

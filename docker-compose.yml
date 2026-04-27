@@ -1,0 +1,134 @@
+# ──────────────────────────────────────────────────────────────
+# docker-compose.yml
+# E-Commerce ETL Pipeline Stack
+# ──────────────────────────────────────────────────────────────
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.9.1-python3.11
+  env_file: .env
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    AIRFLOW__CORE__ENABLE_XCOM_PICKLING: "True"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres_meta:5432/airflow
+    AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW__CORE__FERNET_KEY}
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW__WEBSERVER__SECRET_KEY}
+    AIRFLOW_CONN_AWS_DEFAULT: ${AIRFLOW_CONN_AWS_DEFAULT}
+    AIRFLOW_CONN_POSTGRES_STAGING: ${AIRFLOW_CONN_POSTGRES_STAGING}
+    AIRFLOW_VAR_S3_BUCKET: ${S3_BUCKET}
+    PYTHONPATH: /opt/airflow/dags
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./config:/opt/airflow/config
+    - ./data:/opt/airflow/data
+  depends_on:
+    postgres_meta:
+      condition: service_healthy
+    postgres_staging:
+      condition: service_healthy
+  networks:
+    - etl_network
+
+services:
+
+  postgres_meta:
+    image: postgres:15-alpine
+    container_name: postgres_meta
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_meta_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    networks:
+      - etl_network
+
+  postgres_staging:
+    image: postgres:15-alpine
+    container_name: postgres_staging
+    environment:
+      POSTGRES_USER: ${STAGING_USER}
+      POSTGRES_PASSWORD: ${STAGING_PASSWORD}
+      POSTGRES_DB: ${STAGING_DB}
+    volumes:
+      - postgres_staging_data:/var/lib/postgresql/data
+      - ./sql/init_staging.sql:/docker-entrypoint-initdb.d/init_staging.sql:ro
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${STAGING_USER}", "-d", "${STAGING_DB}"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    networks:
+      - etl_network
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow_init
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        pip install --no-cache-dir apache-airflow-providers-amazon apache-airflow-providers-postgres psycopg2-binary
+        airflow db migrate
+        airflow users create \
+          --username admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com \
+          --password admin
+        echo "Airflow initialised ✓"
+    restart: on-failure
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: airflow_webserver
+    command: >
+      bash -c "pip install --no-cache-dir apache-airflow-providers-amazon apache-airflow-providers-postgres psycopg2-binary && airflow webserver"
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: airflow_scheduler
+    command: >
+      bash -c "pip install --no-cache-dir apache-airflow-providers-amazon apache-airflow-providers-postgres psycopg2-binary && airflow scheduler"
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - etl_network
+
+volumes:
+  postgres_meta_data:
+  postgres_staging_data:
+
+networks:
+  etl_network:
+    driver: bridge
